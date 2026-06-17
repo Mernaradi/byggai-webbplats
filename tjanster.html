@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ByggAI | Funktioner & Tjänster</title>
+ <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Huvudmeny">
+        <a class="brand" href="index.html" aria-label="ByggAI startsida">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>ByggAI</span>
+        </a>
+
+        <div class="nav-links" role="navigation" aria-label="Sidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="Omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+
+        <button class="menu-toggle" data-menu-toggle aria-label="Öppna meny" aria-expanded="false">
+          <span class="bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </nav>
+
+      <div class="mobile-drawer" data-mobile-drawer hidden>
+        <div class="drawer-links" role="navigation" aria-label="Mobilsidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" style="margin-top: 18px;">
+      <div class="hero-card">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span> Funktioner</span>
+        <h1>All admin, i ett flöde—anpassat för byggbranschen.</h1>
+        <p class="lead">
+          Här är de viktigaste delarna: offert, dokumenthantering, projektrapporter och kundkommunikation.
+          Allt är byggt för att vara lätt att använda internt och tydligt mot kund.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="kontakt.html">Boka demo →</a>
+          <a class="btn" href="omoss.html">Läs mer om oss</a>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <h2>Stöd för olika team</h2>
+        <div class="stat-grid">
+          <div class="stat"><div class="num">Sälj</div><div class="lbl">offerter & uppföljning</div></div>
+          <div class="stat"><div class="num">Kalkyl</div><div class="lbl">struktur & underlag</div></div>
+          <div class="stat"><div class="num">Projekt</div><div class="lbl">rapporter & status</div></div>
+          <div class="stat"><div class="num">Admin</div><div class="lbl">dokument & rutin</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Tjänster du kan aktivera</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🧮</div>
+          <h3>Offertassistent</h3>
+          <p>Skapar konsekventa offertunderlag och hjälper er hålla struktur mellan projekt.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🧾</div>
+          <h3>Dokumenthantering</h3>
+          <p>Skapa, tagga och hitta rätt dokument snabbare—utan att det blir kaos.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">📄</div>
+          <h3>Projektrapporter</h3>
+          <p>Omvandla projektdata till rapporttext så att ni sparar tid i veckorapportering.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">💬</div>
+          <h3>Kundkommunikation</h3>
+          <p>Utkast till mejl & uppdateringar med rätt ton: tydligt, sakligt och professionellt.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🔁</div>
+          <h3>Mallar & återanvändning</h3>
+          <p>Bygg era egna mallar för snabbare arbetsflöden och färre återkommande misstag.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">✅</div>
+          <h3>Kvalitetskontroll</h3>
+          <p>Hjälper er checka att underlag och formuleringar följer era interna riktlinjer.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> ByggAI</div>
+      <div>Skapat för byggföretag</div>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

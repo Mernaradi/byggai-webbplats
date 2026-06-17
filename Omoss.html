@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ByggAI | Om oss</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Huvudmeny">
+        <a class="brand" href="index.html" aria-label="ByggAI startsida">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>ByggAI</span>
+        </a>
+
+        <div class="nav-links" role="navigation" aria-label="Sidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="Omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+
+        <button class="menu-toggle" data-menu-toggle aria-label="Öppna meny" aria-expanded="false">
+          <span class="bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </nav>
+
+      <div class="mobile-drawer" data-mobile-drawer hidden>
+        <div class="drawer-links" role="navigation" aria-label="Mobilsidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span> Om oss</span>
+        <h1>Vi gör AI användbart för byggteam—inte bara “cool teknik”.</h1>
+        <p class="lead">
+          ByggAI är byggt för personer som jobbar med verkliga projekt, verkliga deadlines och tydliga krav.
+          Därför fokuserar vi på struktur, tydlighet och ett flöde som sparar tid direkt i vardagen.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="kontakt.html">Prata med oss →</a>
+          <a class="btn" href="tjanster.html">Se hur det fungerar</a>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <h2>Vår filosofi</h2>
+        <div class="grid-3" style="grid-template-columns: 1fr; gap:12px;">
+          <div class="stat">
+            <div class="num">Tydligt</div>
+            <div class="lbl">språk som går att dela</div>
+          </div>
+          <div class="stat">
+            <div class="num">Spårbart</div>
+            <div class="lbl">ordning i underlag</div>
+          </div>
+          <div class="stat">
+            <div class="num">Praktiskt</div>
+            <div class="lbl">sparar tid varje vecka</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Vanliga behov i byggprojekt</h2>
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">⏱️</div>
+          <h3>Minska administration</h3>
+          <p>Genom att automatisera text, struktur och dokumentflöden.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">📍</div>
+          <h3>Hålla konsekvens</h3>
+          <p>Mallar och återanvändning så att alla projekt ser likadana ut.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">🧠</div>
+          <h3>Snabbare beslut</h3>
+          <p>Rätt underlag i rätt tid gör att teamet kan agera snabbare.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> ByggAI</div>
+      <div>Teknisk. Trovärdig. Enkel.</div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

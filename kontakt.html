@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ByggAI | Kontakt & Boka demo</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Huvudmeny">
+        <a class="brand" href="index.html" aria-label="ByggAI startsida">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>ByggAI</span>
+        </a>
+
+        <div class="nav-links" role="navigation" aria-label="Sidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="Omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+
+        <button class="menu-toggle" data-menu-toggle aria-label="Öppna meny" aria-expanded="false">
+          <span class="bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </nav>
+
+      <div class="mobile-drawer" data-mobile-drawer hidden>
+        <div class="drawer-links" role="navigation" aria-label="Mobilsidor">
+          <a href="index.html" data-navlink>Start</a>
+          <a href="tjanster.html" data-navlink>Funktioner/Tjänster</a>
+          <a href="omoss.html" data-navlink>Om oss</a>
+          <a href="kontakt.html" data-navlink>Kontakt / Boka demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" style="margin-top:18px;">
+      <div class="hero-card">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span> Kontakt</span>
+        <h1>Boka demo och få ett förslag på ert flöde.</h1>
+        <p class="lead">
+          Fyll i formuläret så återkommer vi. Formuläret valideras direkt i webbläsaren (tillgängligt & tydligt).
+        </p>
+      </div>
+      <aside class="side-panel">
+        <h2>Snabbt svar</h2>
+        <div class="form-note">
+          <p style="margin-top:0;">
+            Vi fokuserar på era behov: offert, dokument, projektrapporter och kundkommunikation.
+          </p>
+          <p class="help">Tips: beskriv gärna vilken typ av projekt ni jobbar mest med.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="form-wrap">
+        <div>
+          <h2 class="section-title" style="margin-top:0;">FAQ</h2>
+          <div class="accordion" aria-label="Vanliga frågor">
+            <div class="acc-item" data-open="false">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                <span>Fungerar ByggAI för både små och stora bolag?</span>
+                <span class="chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <div class="acc-content">
+                  Ja. Vi kan starta med ett avgränsat flöde (t.ex. offert + dokument) och sedan bygga ut när ni ser värdet.
+                </div>
+              </div>
+            </div>
+
+            <div class="acc-item" data-open="false">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                <span>Hur ser processen ut vid en demo?</span>
+                <span class="chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <div class="acc-content">
+                  Vi går igenom era nuvarande rutiner, väljer ett konkret exempel och visar hur AI kan ge förbättrade
+                  utkast och dokumentstruktur.
+                </div>
+              </div>
+            </div>
+
+            <div class="acc-item" data-open="false">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                <span>Kan vi anpassa mallar och ton mot kund?</span>
+                <span class="chev" aria-hidden="true">⌄</span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <div class="acc-content">
+                  Absolut. Ni styr språk, struktur och vilka delar som ska återanvändas för att skapa konsekvens över projekt.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form" aria-label="Boka demo formulär">
+          <form class="form" data-demo-form>
+            <div class="field-row">
+              <div>
+                <label for="name">Namn *</label>
+                <input id="name" name="name" type="text" autocomplete="name" aria-invalid="false" required />
+                <div class="error" data-error-for="name">Ange ditt namn (minst 2 tecken).</div>
+              </div>
+
+              <div>
+                <label for="company">Företag *</label>
+                <input id="company" name="company" type="text" aria-invalid="false" required />
+                <div class="error" data-error-for="company">Ange företagets namn (minst 2 tecken).</div>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label for="email">E-post *</label>
+                <input id="email" name="email" type="email" autocomplete="email" aria-invalid="false" required />
+                <div class="error" data-error-for="email">Ange en giltig e-postadress.</div>
+              </div>
+
+              <div>
+                <label for="phone">Telefon (valfritt)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" aria-invalid="false" placeholder="t.ex. 070-123 45 67" />
+                <div class="error" data-error-for="phone">Ange ett giltigt telefonnummer.</div>
+              </div>
+            </div>
+
+            <label for="topic">Vad vill ni automatisera? *</label>
+            <select id="topic" name="topic" aria-invalid="false" required>
+              <option value="">Välj ett alternativ</option>
+              <option value="offerter">Offerter</option>
+              <option value="dokument">Dokumenthantering</option>
+              <option value="rapporter">Projektrapporter</option>
+              <option value="kommunikation">Kundkommunikation</option>
+              <option value="allt">Flera delar</option>
+            </select>
+            <div class="error" data-error-for="topic">Välj ett ämne för din förfrågan.</div>
+
+            <label for="message">Beskriv kort ert behov *</label>
+            <textarea id="message" name="message" aria-invalid="false" required
+              placeholder="Ex: Vi vill minska tiden för att ta fram offerter och hålla dokument/rapporter konsekventa."></textarea>
+            <div class="error" data-error-for="message">Skriv ett meddelande (minst 10 tecken).</div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Skicka förfrågan</button>
+              <button class="btn" type="reset">Rensa</button>
+              <p class="status" data-form-status aria-live="polite"></p>
+            </div>
+
+            <p class="help">
+              Genom att skicka godkänner du att vi använder informationen för att återkoppla på din förfrågan.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>© <span id="year"></span> ByggAI</div>
+      <div>Kontakt: boka demo</div>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
